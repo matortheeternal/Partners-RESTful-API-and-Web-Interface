@@ -1,0 +1,2 @@
+module VolsHelper
+end

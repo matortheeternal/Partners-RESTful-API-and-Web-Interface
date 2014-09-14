@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @volunteer.username %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @volunteer.password %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @volunteer.firstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @volunteer.lastName %>
+</p>
+
+<p>
+  <strong>Totalhours:</strong>
+  <%= @volunteer.totalHours %>
+</p>
+
+<p>
+  <strong>Totalevents:</strong>
+  <%= @volunteer.totalEvents %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @volunteer.rank %>
+</p>
+
+<p>
+  <strong>Events:</strong>
+  <%= @volunteer.events %>
+</p>
+
+<%= link_to 'Edit', edit_volunteer_path(@volunteer) %> |
+<%= link_to 'Back', volunteers_path %>

@@ -1,0 +1,50 @@
+<h1>Listing volunteers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Totalhours</th>
+      <th>Totalevents</th>
+      <th>Rank</th>
+      <th>Events</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @volunteers.each do |volunteer| %>
+      <tr>
+        <td><%= volunteer.username %></td>
+        <td><%= volunteer.password %></td>
+        <td><%= volunteer.firstName %></td>
+        <td><%= volunteer.lastName %></td>
+        <td><%= volunteer.totalHours %></td>
+        <td><%= volunteer.totalEvents %></td>
+        <td><%= volunteer.rank %></td>
+        <td><%= volunteer.events %></td>
+        <td><%= link_to 'Show', volunteer %></td>
+        <td><%= link_to 'Edit', edit_volunteer_path(volunteer) %></td>
+        <td><%= link_to 'Delete', volunteer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Volunteer', new_volunteer_path %>
+
+<br>
+
+<br>
+
+<h2>Import Volunteers</h2>
+
+<%= form_tag import_volunteers_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

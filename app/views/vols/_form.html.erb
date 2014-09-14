@@ -1,0 +1,213 @@
+<%= form_for(@vol) do |f| %>
+  <% if @vol.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vol.errors.count, "error") %> prohibited this vol from being saved:</h2>
+
+      <ul>
+      <% @vol.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :IDVolunteer %><br>
+    <%= f.number_field :IDVolunteer %>
+  </div>
+  <div class="field">
+    <%= f.label :Prefix %><br>
+    <%= f.text_field :Prefix %>
+  </div>
+  <div class="field">
+    <%= f.label :NameFirst %><br>
+    <%= f.text_field :NameFirst %>
+  </div>
+  <div class="field">
+    <%= f.label :NamePreferred %><br>
+    <%= f.text_field :NamePreferred %>
+  </div>
+  <div class="field">
+    <%= f.label :NameMiddle %><br>
+    <%= f.text_field :NameMiddle %>
+  </div>
+  <div class="field">
+    <%= f.label :NameLast %><br>
+    <%= f.text_field :NameLast %>
+  </div>
+  <div class="field">
+    <%= f.label :Suffix %><br>
+    <%= f.text_field :Suffix %>
+  </div>
+  <div class="field">
+    <%= f.label :Title %><br>
+    <%= f.text_field :Title %>
+  </div>
+  <div class="field">
+    <%= f.label :Organization %><br>
+    <%= f.text_field :Organization %>
+  </div>
+  <div class="field">
+    <%= f.label :Street1 %><br>
+    <%= f.text_field :Street1 %>
+  </div>
+  <div class="field">
+    <%= f.label :City1 %><br>
+    <%= f.text_field :City1 %>
+  </div>
+  <div class="field">
+    <%= f.label :State1 %><br>
+    <%= f.text_field :State1 %>
+  </div>
+  <div class="field">
+    <%= f.label :ZipCode1 %><br>
+    <%= f.text_field :ZipCode1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Phone1 %><br>
+    <%= f.text_field :Phone1 %>
+  </div>
+  <div class="field">
+    <%= f.label :PhoneCell %><br>
+    <%= f.text_field :PhoneCell %>
+  </div>
+  <div class="field">
+    <%= f.label :Fax1 %><br>
+    <%= f.text_field :Fax1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Email1 %><br>
+    <%= f.text_field :Email1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Website %><br>
+    <%= f.text_field :Website %>
+  </div>
+  <div class="field">
+    <%= f.label :Gender %><br>
+    <%= f.text_field :Gender %>
+  </div>
+  <div class="field">
+    <%= f.label :BioEthnicity %><br>
+    <%= f.text_field :BioEthnicity %>
+  </div>
+  <div class="field">
+    <%= f.label :BioLanguage %><br>
+    <%= f.text_field :BioLanguage %>
+  </div>
+  <div class="field">
+    <%= f.label :Coordinator %><br>
+    <%= f.text_field :Coordinator %>
+  </div>
+  <div class="field">
+    <%= f.label :Newsletter %><br>
+    <%= f.text_field :Newsletter %>
+  </div>
+  <div class="field">
+    <%= f.label :RetireeEmploymentHistory %><br>
+    <%= f.text_field :RetireeEmploymentHistory %>
+  </div>
+  <div class="field">
+    <%= f.label :VolCommitment %><br>
+    <%= f.text_field :VolCommitment %>
+  </div>
+  <div class="field">
+    <%= f.label :StudentSchool %><br>
+    <%= f.text_field :StudentSchool %>
+  </div>
+  <div class="field">
+    <%= f.label :StudentMajor %><br>
+    <%= f.text_field :StudentMajor %>
+  </div>
+  <div class="field">
+    <%= f.label :StudentGradYear %><br>
+    <%= f.text_field :StudentGradYear %>
+  </div>
+  <div class="field">
+    <%= f.label :VolMentor %><br>
+    <%= f.text_field :VolMentor %>
+  </div>
+  <div class="field">
+    <%= f.label :VolGuestSpeaker %><br>
+    <%= f.text_field :VolGuestSpeaker %>
+  </div>
+  <div class="field">
+    <%= f.label :VolMockInterviews %><br>
+    <%= f.text_field :VolMockInterviews %>
+  </div>
+  <div class="field">
+    <%= f.label :VolFieldTrip %><br>
+    <%= f.text_field :VolFieldTrip %>
+  </div>
+  <div class="field">
+    <%= f.label :VolJobShadow %><br>
+    <%= f.text_field :VolJobShadow %>
+  </div>
+  <div class="field">
+    <%= f.label :VolComputer %><br>
+    <%= f.text_field :VolComputer %>
+  </div>
+  <div class="field">
+    <%= f.label :VolArts %><br>
+    <%= f.text_field :VolArts %>
+  </div>
+  <div class="field">
+    <%= f.label :VolGarden %><br>
+    <%= f.text_field :VolGarden %>
+  </div>
+  <div class="field">
+    <%= f.label :VolTutor %><br>
+    <%= f.text_field :VolTutor %>
+  </div>
+  <div class="field">
+    <%= f.label :VolCareerDay %><br>
+    <%= f.text_field :VolCareerDay %>
+  </div>
+  <div class="field">
+    <%= f.label :VolInternships %><br>
+    <%= f.text_field :VolInternships %>
+  </div>
+  <div class="field">
+    <%= f.label :VolSpecialEvents %><br>
+    <%= f.text_field :VolSpecialEvents %>
+  </div>
+  <div class="field">
+    <%= f.label :VolSports %><br>
+    <%= f.text_field :VolSports %>
+  </div>
+  <div class="field">
+    <%= f.label :VolLibrary %><br>
+    <%= f.text_field :VolLibrary %>
+  </div>
+  <div class="field">
+    <%= f.label :VolFacilities %><br>
+    <%= f.text_field :VolFacilities %>
+  </div>
+  <div class="field">
+    <%= f.label :VolJoinCommittee %><br>
+    <%= f.text_field :VolJoinCommittee %>
+  </div>
+  <div class="field">
+    <%= f.label :VolReading %><br>
+    <%= f.text_field :VolReading %>
+  </div>
+  <div class="field">
+    <%= f.label :VolGroupProjects %><br>
+    <%= f.text_field :VolGroupProjects %>
+  </div>
+  <div class="field">
+    <%= f.label :VolMusic %><br>
+    <%= f.text_field :VolMusic %>
+  </div>
+  <div class="field">
+    <%= f.label :VolLunchtime %><br>
+    <%= f.text_field :VolLunchtime %>
+  </div>
+  <div class="field">
+    <%= f.label :VolOffice %><br>
+    <%= f.text_field :VolOffice %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

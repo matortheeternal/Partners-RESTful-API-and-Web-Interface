@@ -1,0 +1,2 @@
+module VolEventsHelper
+end

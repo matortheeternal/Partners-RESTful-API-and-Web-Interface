@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  IDEvent: 1
+  IDVolunteer: 1
+  DateEvent: MyString
+  EventType: MyString
+  Project: MyString
+  Hours: 1.5
+  Feedback: MyString
+  HoursTotal: 1.5
+  NameSchool: MyString
+  Status: MyString
+  NameTeacher: MyString
+  Time: MyString
+  Instructions: MyString
+  DatePassportCreated: MyString
+  DatePassportDue: MyString
+  IDRequest: MyString
+  DateCreated: MyString
+  DateModified: MyString
+  AccountCreated: MyString
+  AccountModified: MyString
+  AccountPassportCreated: MyString
+  ScheduleOngoing: MyString
+  NameVolunteer: MyString
+  EmailTeacher: MyString
+  EmailVolunteer: MyString
+  ProjectAndDate: MyString
+  FeedbackVolunteer: MyString
+  FeedbackTeacher: MyString
+  AcademicYear: MyString
+
+two:
+  IDEvent: 1
+  IDVolunteer: 1
+  DateEvent: MyString
+  EventType: MyString
+  Project: MyString
+  Hours: 1.5
+  Feedback: MyString
+  HoursTotal: 1.5
+  NameSchool: MyString
+  Status: MyString
+  NameTeacher: MyString
+  Time: MyString
+  Instructions: MyString
+  DatePassportCreated: MyString
+  DatePassportDue: MyString
+  IDRequest: MyString
+  DateCreated: MyString
+  DateModified: MyString
+  AccountCreated: MyString
+  AccountModified: MyString
+  AccountPassportCreated: MyString
+  ScheduleOngoing: MyString
+  NameVolunteer: MyString
+  EmailTeacher: MyString
+  EmailVolunteer: MyString
+  ProjectAndDate: MyString
+  FeedbackVolunteer: MyString
+  FeedbackTeacher: MyString
+  AcademicYear: MyString

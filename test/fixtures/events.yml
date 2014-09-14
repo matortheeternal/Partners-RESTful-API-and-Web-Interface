@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eventID: MyString
+  date: MyString
+  time: MyString
+  location: MyString
+  GPSLocation: MyString
+  completionStatus: false
+  description: MyString
+  startTime: MyString
+  endTime: MyString
+  totalTime: 1
+  survey: MyString
+
+two:
+  eventID: MyString
+  date: MyString
+  time: MyString
+  location: MyString
+  GPSLocation: MyString
+  completionStatus: false
+  description: MyString
+  startTime: MyString
+  endTime: MyString
+  totalTime: 1
+  survey: MyString

@@ -1,0 +1,133 @@
+<%= form_for(@vol_event) do |f| %>
+  <% if @vol_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@vol_event.errors.count, "error") %> prohibited this vol_event from being saved:</h2>
+
+      <ul>
+      <% @vol_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :IDEvent %><br>
+    <%= f.number_field :IDEvent %>
+  </div>
+  <div class="field">
+    <%= f.label :IDVolunteer %><br>
+    <%= f.number_field :IDVolunteer %>
+  </div>
+  <div class="field">
+    <%= f.label :DateEvent %><br>
+    <%= f.text_field :DateEvent %>
+  </div>
+  <div class="field">
+    <%= f.label :EventType %><br>
+    <%= f.text_field :EventType %>
+  </div>
+  <div class="field">
+    <%= f.label :Project %><br>
+    <%= f.text_field :Project %>
+  </div>
+  <div class="field">
+    <%= f.label :Hours %><br>
+    <%= f.text_field :Hours %>
+  </div>
+  <div class="field">
+    <%= f.label :Feedback %><br>
+    <%= f.text_field :Feedback %>
+  </div>
+  <div class="field">
+    <%= f.label :HoursTotal %><br>
+    <%= f.text_field :HoursTotal %>
+  </div>
+  <div class="field">
+    <%= f.label :NameSchool %><br>
+    <%= f.text_field :NameSchool %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br>
+    <%= f.text_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :NameTeacher %><br>
+    <%= f.text_field :NameTeacher %>
+  </div>
+  <div class="field">
+    <%= f.label :Time %><br>
+    <%= f.text_field :Time %>
+  </div>
+  <div class="field">
+    <%= f.label :Instructions %><br>
+    <%= f.text_field :Instructions %>
+  </div>
+  <div class="field">
+    <%= f.label :DatePassportCreated %><br>
+    <%= f.text_field :DatePassportCreated %>
+  </div>
+  <div class="field">
+    <%= f.label :DatePassportDue %><br>
+    <%= f.text_field :DatePassportDue %>
+  </div>
+  <div class="field">
+    <%= f.label :IDRequest %><br>
+    <%= f.text_field :IDRequest %>
+  </div>
+  <div class="field">
+    <%= f.label :DateCreated %><br>
+    <%= f.text_field :DateCreated %>
+  </div>
+  <div class="field">
+    <%= f.label :DateModified %><br>
+    <%= f.text_field :DateModified %>
+  </div>
+  <div class="field">
+    <%= f.label :AccountCreated %><br>
+    <%= f.text_field :AccountCreated %>
+  </div>
+  <div class="field">
+    <%= f.label :AccountModified %><br>
+    <%= f.text_field :AccountModified %>
+  </div>
+  <div class="field">
+    <%= f.label :AccountPassportCreated %><br>
+    <%= f.text_field :AccountPassportCreated %>
+  </div>
+  <div class="field">
+    <%= f.label :ScheduleOngoing %><br>
+    <%= f.text_field :ScheduleOngoing %>
+  </div>
+  <div class="field">
+    <%= f.label :NameVolunteer %><br>
+    <%= f.text_field :NameVolunteer %>
+  </div>
+  <div class="field">
+    <%= f.label :EmailTeacher %><br>
+    <%= f.text_field :EmailTeacher %>
+  </div>
+  <div class="field">
+    <%= f.label :EmailVolunteer %><br>
+    <%= f.text_field :EmailVolunteer %>
+  </div>
+  <div class="field">
+    <%= f.label :ProjectAndDate %><br>
+    <%= f.text_field :ProjectAndDate %>
+  </div>
+  <div class="field">
+    <%= f.label :FeedbackVolunteer %><br>
+    <%= f.text_field :FeedbackVolunteer %>
+  </div>
+  <div class="field">
+    <%= f.label :FeedbackTeacher %><br>
+    <%= f.text_field :FeedbackTeacher %>
+  </div>
+  <div class="field">
+    <%= f.label :AcademicYear %><br>
+    <%= f.text_field :AcademicYear %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

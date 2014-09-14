@@ -1,0 +1,48 @@
+<h1>Listing vols</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Prefix</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Suffix</th>
+      <th>Title</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vols.each do |vol| %>
+      <tr>
+        <td><%= vol.IDVolunteer %></td>
+        <td><%= vol.Prefix %></td>
+        <td><%= vol.NamePreferred %></td>
+        <td><%= vol.NameLast %></td>
+        <td><%= vol.Suffix %></td>
+        <td><%= vol.Title %></td>
+        <td><%= vol.Email1 %></td>
+        <td><%= link_to 'Show', vol %></td>
+        <td><%= link_to 'Edit', edit_vol_path(vol) %></td>
+        <td><%= link_to 'Delete', vol, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Volunteer', new_vol_path %>
+
+<br>
+
+<br>
+
+<h2>Import Volunteers</h2>
+
+<%= form_tag import_vols_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>

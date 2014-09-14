@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Eventid:</strong>
+  <%= @event.eventID %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @event.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @event.time %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @event.location %>
+</p>
+
+<p>
+  <strong>Gpslocation:</strong>
+  <%= @event.GPSLocation %>
+</p>
+
+<p>
+  <strong>Completionstatus:</strong>
+  <%= @event.completionStatus %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+  <strong>Starttime:</strong>
+  <%= @event.startTime %>
+</p>
+
+<p>
+  <strong>Endtime:</strong>
+  <%= @event.endTime %>
+</p>
+
+<p>
+  <strong>Totaltime:</strong>
+  <%= @event.totalTime %>
+</p>
+
+<p>
+  <strong>Survey:</strong>
+  <%= @event.survey %>
+</p>
+
+<%= link_to 'Edit', edit_event_path(@event) %> |
+<%= link_to 'Back', events_path %>

@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  IDSchool: 1
+  NameSchool: MyString
+  Principal: MyString
+  Street: MyString
+  City: MyString
+  State: MyString
+  Zip: MyString
+  Phone: MyString
+  Fax: MyString
+  District: MyString
+  Region: MyString
+
+two:
+  IDSchool: 1
+  NameSchool: MyString
+  Principal: MyString
+  Street: MyString
+  City: MyString
+  State: MyString
+  Zip: MyString
+  Phone: MyString
+  Fax: MyString
+  District: MyString
+  Region: MyString

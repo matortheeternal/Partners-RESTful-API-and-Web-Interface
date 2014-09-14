@@ -1,0 +1,56 @@
+<h1>Listing vol_events</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID Event</th>
+      <th>ID Volunteer</th>
+      <th>Event date</th>
+      <th>Event type</th>
+      <th>Project</th>
+      <th>Hours</th>
+      <th>Total hours</th>
+      <th>School</th>
+      <th>Status</th>
+      <th>Teacher</th>
+      <th>Time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vol_events.each do |vol_event| %>
+      <tr>
+        <td><%= vol_event.IDEvent %></td>
+        <td><%= vol_event.IDVolunteer %></td>
+        <td><%= vol_event.DateEvent %></td>
+        <td><%= vol_event.EventType %></td>
+        <td><%= vol_event.Project %></td>
+        <td><%= vol_event.Hours %></td>
+        <td><%= vol_event.HoursTotal %></td>
+        <td><%= vol_event.NameSchool %></td>
+        <td><%= vol_event.Status %></td>
+        <td><%= vol_event.NameTeacher %></td>
+        <td><%= vol_event.Time %></td>
+        <td><%= link_to 'Show', vol_event %></td>
+        <td><%= link_to 'Edit', edit_vol_event_path(vol_event) %></td>
+        <td><%= link_to 'Delete', vol_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Vol event', new_vol_event_path %>
+
+<br>
+
+<br>
+
+<h2>Import Volunteer Events</h2>
+
+<%= form_tag import_vol_events_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
